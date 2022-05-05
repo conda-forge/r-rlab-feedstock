@@ -1,4 +1,4 @@
-{% set version = '2.15.1' %}
+{% set version = "4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Rlab_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Rlab/Rlab_{{ version }}.tar.gz
-  sha256: 4fa5f8696ac796a02ce8a9ba4c3c5150c2bc90ea983e56db6444874890bc60dd
+  sha256: b3744ecb97a3858ac3386586fbfd87320b06c4ec086e987e69b9a88f23ab3905
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -38,7 +38,7 @@ about:
   license: GPL (>= 2)
   summary: Functions and Datasets Required for ST370 class
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
