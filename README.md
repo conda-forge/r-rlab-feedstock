@@ -1,11 +1,11 @@
-About r-rlab
-============
+About r-rlab-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rlab-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.r-project.org, http://courses.ncsu.edu/ST370/distance/rlab
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rlab-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions and Datasets Required for ST370 class
 
